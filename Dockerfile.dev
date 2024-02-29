@@ -1,0 +1,14 @@
+FROM maven:3.8.4-openjdk-17-slim AS development
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y git bash
+
+RUN mkdir -p /app/upload/invoices
+
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+COPY . .
+
+CMD ["mvn", "spring-boot:run"]

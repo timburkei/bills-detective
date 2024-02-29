@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  expenditure-tracker-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - postgres-dev
+    volumes:
+     # - /Users/timburkei/Documents/software-projects/05_expend-tracker/.env:/app/.env
+      - ./.env:/app/.env
+      - upload-volume:/app/upload
+      - ./src:/app/src
+    environment:
+      DATABASE_URL: jdbc:postgresql://postgres-dev:5432/postgres
+
+
+  postgres-dev:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: postgres-dev
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/dev
+
+volumes:
+  postgres-data:
+  upload-volume:
