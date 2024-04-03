@@ -1,3 +1,9 @@
+This project is a University Software Project. My task was
+
+* build the backend logic with java
+* dockerize the frontend, backend, database and write a docker-compose.yml for all services
+* integrate the login service von Auth0 by Okta.
+
 # run project
 Make sure that you have the valid .env file!
 
