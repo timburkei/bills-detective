@@ -1,10 +1,25 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+### Development Tools ###
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
 
-### STS ###
+# Visual Studio Code
+.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+# Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,28 +28,75 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# Cloud9 IDE
+.c9/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
+# Sublime Text
+*.sublime-workspace
+
+# Angular CLI
+.angular/cache
+
+### Build and Dependencies ###
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Bazel
+/bazel-out
+
+# Temporary Files
+/tmp
+/out-tsc
+
+# Node.js
+/node_modules
+
+# Compiled Output
+/dist
+/out-tsc
+
+### Source Files ###
+# Specific source code folders
+!**/src/main/**/target/
+!**/src/test/**/target/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-
-### Development ###
+### Config Files ###
 .env
+auth_config.json
 
-### Files ###
+### Log and Database Files ###
+*.log
+*.db
+*.sqlite3
+__pycache__/
+*.py[cod]
+
+### Files and Uploads ###
 /upload/invoices
 upload/invoices
+/Images/*.jpg
+/Images/*.jpeg
+predictions.json
+
+### Cache Files ###
+*.cache
+.sass-cache
+.connect.lock
+
+### Coverage and Profiling ###
+/coverage
+libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+### Misc ###
+.DS_Store
+Thumbs.db
+.history/*
+.typings

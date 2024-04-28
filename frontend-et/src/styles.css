@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0; /* Entfernt den Standardaußenabstand des Body-Elements */
+  padding: 0; /* Entfernt den Standardinnenabstand des Body-Elements */
+  background-image: url('./assets/background.png'); /* Ersetzen Sie 'Pfad-zum-Hintergrundbild' durch den tatsächlichen Pfad */
+  background-size: cover; /* Stellt sicher, dass das Bild den gesamten Bildschirm abdeckt */
+  background-position: center; /* Zentriert das Bild */
+  background-repeat: no-repeat; /* Verhindert die Wiederholung des Bildes */
+}
+
+
+/* Fügen Sie zusätzliche Stile hinzu, wenn Sie möchten */

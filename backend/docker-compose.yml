@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  expenditure-tracker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    volumes:
+     # - $PWD/.env:/app/.env
+      - ./.env:/app/.env
+      - upload-volume:/app/upload
+
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
+  upload-volume:

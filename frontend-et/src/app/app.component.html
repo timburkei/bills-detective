@@ -1,0 +1,38 @@
+<div class="d-flex flex-column h-100">
+  <!--<app-nav-bar></app-nav-bar>  [ngClass]="{'hidden': hideNavbar}"-->
+  <header *ngIf="auth.user$ | async as user" class="sticky top-0 z-50">
+    <div class="navbar bg-base-100">
+
+      <div class="navbar-start">
+        <a routerLink="/">
+          <img src="../assets/logo.png" class="max-h-12"/>
+        </a>
+
+        <ul class="menu menu-horizontal px-1">
+          <li><a routerLink="/">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-center lg:flex">
+        <!-- place nav bar center content here -->
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="me-4" routerLink="/expenses">Ausgaben</a></li>
+          <li><a class="me-4" routerLink="/charts">Grafiken</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end">
+        <div>
+          <button routerLink="/upload" class="btn btn-primary">Hinzufügen</button>
+        </div>
+          <div routerLink="/profile" class="avatar w-12 ml-4">
+            <img [src]="user.picture" class="rounded-full"/>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mx-auto flex-grow-1 flex-shrink-1 mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

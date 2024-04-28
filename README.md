@@ -1,33 +1,45 @@
 # Introduction
-This project is a university software project. My task was to
+Our goal was to create a user-friendly app that uses AI to sort and display receipts from food shops.
 
-* Build the backend logic with Java and the database with PostgreSQL
-* Dockerize the frontend, backend, database and write a docker-compose.yml for all services
+This project was a [university software project](https://www.hdm-stuttgart.de/medianight/projekte?projekt_ID=4297) from October 2023 to January 2024. The project was rated 1.0. The project was rated 1.0, meaning it met all requirements.
+
+My task was to:
+
+* Plan and build the backend logic with Java
+* Plan and build the database with PostgreSQL
+* Dockerise the frontend, backend, database and write a Docker-compose.yml for all services
 * Integrate the login service from Auth0 by Okta.
 
-Our common goal for this project was to implement a user-friendly application that uses AI to sort uploaded receipts and display them in easy-to-understand graphics.
+
+## Impression
+
+### Planning database
+Graphical planning of the database 
+
+![Database Image](./drawSQL-image.png)
+<br>
+### Swagger UI
+Swagger was used
+![Swagger UI](./swagger-ui.png)
+<br>
+### AI Demo
+How the AI worked
+![Demo](./demo_picture.png)
 
 Our project aims to assist users in visualising and monitoring their grocery spending in a simple and enjoyable manner. By scanning receipts, our AI components and graphics enable users to track their spending, monitor price changes, and shopping behaviour.
 
 This helps users to gain a better understanding of inflation in Germany. Uploading receipts is a breeze, and with minimal data, users can obtain a comprehensive overview of their shopping behaviour. For instance, individuals can monitor the price changes of different products, such as bananas, over time and determine the most affordable place to make a purchase.
 
 # run project
-Make sure that you have the valid .env file!
+So that the project can be executed locally:
+
+- the respective .env file must be stored in the backend folder
+- the respective .env file must be stored in the ai-logic-et folder
+- the respective auth_config.json must be stored in the frontend-et folder.
+
+The ai logic folder has not been uploaded
 
 To start the Docker image, run the following command in the root directory of the project:
 ```bash
-docker-compose up
-```
-
-# Swagger UI
-Link to Swagger UI
-[http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-
-## Hint category
-tag = category<br>
-product = subcategory
-
-# Development on a Docker Container
-```bash
-docker-compose -f docker-compose.dev.yml up --build
+docker-compose up -d
 ```

@@ -1,0 +1,58 @@
+<div class="grid grid-cols-3 gap-4 relative">
+  <div class="col-span-2 bg-white p-4 rounded shadow-md">
+    Erstelle Grafiken um eine genau Übersicht über deine vergangenen Ausgaben zu erhalten:
+
+    <br>
+    <div>
+      <!-- Categorie dropdown-->
+      <div class="dropdown dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost">Kategorie</div>
+        <ul tabindex="0" class="dropdown-content z-40 p-2 shadow bg-base-100 rounded-box">
+          <li *ngFor="let category of categories">
+            <div class="form-control">
+              <label class="label cursor-pointer">
+                <span class="label-text">{{ category.name }}</span>
+                <input type="checkbox" class="checkbox ms-4" (change)="toggleCategory(category.id, category.name)"/>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Chains dropdown-->
+      <div class="dropdown dropdown-bottom">
+        <div tabindex="0" role="button" class="btn btn-ghost">Laden</div>
+        <ul tabindex="0" class="dropdown-content z-40 p-2 shadow bg-base-100 rounded-box">
+          <li *ngFor="let chain of chains">
+            <div class="form-control">
+              <label class="label cursor-pointer">
+                <span class="label-text">{{ chain.name }}</span>
+                <input type="checkbox" class="checkbox ms-4" (change)="toggleChain(chain.id, chain.name)"/>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <button class="btn btn-primary my-4" [disabled]="!(selectedCategoriesIds.length>0&&selectedChainsIds.length>0)"
+                (click)="generateChart()">Generiere Grafik
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <ng-container *ngIf="stackedColumnChartData">
+    <div class="col-span-2 bg-white p-4 rounded shadow-md">
+      <app-stacked-column-chart [chartData]="stackedColumnChartData" *ngIf="stackedColumnChartData"/>
+    </div>
+
+
+    <div class="col-span-2 bg-white p-4 rounded shadow-md">
+      <!--Der angezeigte Zeitraum umfasst die letzten sechs Monate.-->
+      Mithilfe der Symbolleiste oben rechts, kannst du die Grafik herunterladen.
+      Probier es mal aus!
+    </div>
+  </ng-container>
+</div>
