@@ -1,0 +1,37 @@
+{
+  "invoiceFileId": "IMG_2964.jpeg",
+  "streetStore": "KalkofenstraBe5",
+  "numberStore": "545a",
+  "zipStore": "71384",
+  "cityStore": "RITEWEINSTADT",
+  "nameStore": "Feinkost Kolinski",
+  "invoiceDate": "14.11.2023",
+  "invoiceTime": "19:19:00",
+  "totalAmount": 14.1,
+  "taxes7Amount": 0.0,
+  "taxes19Amount": 14.1,
+  "discountsAmount": 0.0,
+  "userId": "auth0|65630d5317b4bdb501144ab5",
+  "invoiceItems": [
+    {
+      "name": "OAUGSTARKSICHER",
+      "price": 2.4
+    },
+    {
+      "name": "SANT TOTCHER TOIPA DESIGN EC",
+      "price": 4.95
+    },
+    {
+      "name": "EMSAL BODENREIN SPRAY PARKETT",
+      "price": 4.45
+    },
+    {
+      "name": "KODAK ARTIKEL SOFORT",
+      "price": 0.2
+    },
+    {
+      "name": "NIVEA DUSCHE CREME SOFT",
+      "price": 1.75
+    }
+  ]
+}

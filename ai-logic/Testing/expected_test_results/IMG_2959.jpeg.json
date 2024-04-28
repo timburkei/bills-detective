@@ -1,0 +1,137 @@
+{
+  "invoiceFileId": "IMG_2959.jpeg",
+  "streetStore": "Benzstr.9",
+  "numberStore": "545a",
+  "zipStore": "71384",
+  "cityStore": "Hamburg",
+  "nameStore": "NEUKAUF WEINSTADT GR OB PACH",
+  "invoiceDate": "13.05.2023",
+  "invoiceTime": "20:38:00",
+  "totalAmount": 71.08,
+  "taxes7Amount": 52.77,
+  "taxes19Amount": 0.0,
+  "discountsAmount": 0.0,
+  "userId": "auth0|65630d5317b4bdb501144ab5",
+  "invoiceItems": [
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "PANE",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "FE LARA RA ARA AHA HAFER",
+      "price": 1.0
+    },
+    {
+      "name": "ARA ARTYRE MLI FU J",
+      "price": 0.49
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "N IS AX",
+      "price": 4.89
+    },
+    {
+      "name": "EHI ERS",
+      "price": 1.0
+    },
+    {
+      "name": "DRBEST ZAHNBUER",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 9.49
+    },
+    {
+      "name": "SEAN ORB SEAL TACBUERG GEM MAUL TAS",
+      "price": 4.5
+    },
+    {
+      "name": "FEB TDIUC MAUL",
+      "price": 1.0
+    },
+    {
+      "name": "E ARTA NRERANURKH A U",
+      "price": 0.29
+    },
+    {
+      "name": "SS F BJ NG",
+      "price": 1.0
+    },
+    {
+      "name": "AZ BMN",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 3.38
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 0.99
+    },
+    {
+      "name": "RTD",
+      "price": 1.0
+    },
+    {
+      "name": "HB TBE HUCHAHN ETER ITTE",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 1.0
+    },
+    {
+      "name": "DER GER\u00c4T",
+      "price": 0.96
+    },
+    {
+      "name": "U N U W",
+      "price": 0.0
+    },
+    {
+      "name": "AND VAL PLUND",
+      "price": 0.9
+    },
+    {
+      "name": "KATO SAFOS FETA",
+      "price": 1.0
+    },
+    {
+      "name": "SRS",
+      "price": 0.38
+    },
+    {
+      "name": "IA",
+      "price": 1.0
+    },
+    {
+      "name": "SWEET AERYTHRIT",
+      "price": 5.39
+    },
+    {
+      "name": "BIO ALNA HIMBEEREN",
+      "price": 3.79
+    }
+  ]
+}
