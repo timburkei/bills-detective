@@ -37,8 +37,6 @@ So that the project can be executed locally:
 - the respective .env file must be stored in the ai-logic-et folder
 - the respective auth_config.json must be stored in the frontend-et folder.
 
-The ai logic folder has not been uploaded
-
 To start the Docker image, run the following command in the root directory of the project:
 ```bash
 docker-compose up -d
