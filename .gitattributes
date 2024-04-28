@@ -1,3 +1,0 @@
-*.pt filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-ai-logic-et/Model/yoloV8_M_segmentation.pt filter=lfs diff=lfs merge=lfs -text
