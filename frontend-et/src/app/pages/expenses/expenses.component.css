@@ -1,4 +1,0 @@
-.list-card {
-  max-height: 80vh; /* oder eine andere maximale Höhe nach Bedarf */
-  overflow-y: auto;
-}

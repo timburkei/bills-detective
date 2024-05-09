@@ -31,13 +31,4 @@ Our project aims to assist users in visualising and monitoring their grocery spe
 This helps users to gain a better understanding of inflation in Germany. Uploading receipts is a breeze, and with minimal data, users can obtain a comprehensive overview of their shopping behaviour. For instance, individuals can monitor the price changes of different products, such as bananas, over time and determine the most affordable place to make a purchase.
 
 # run project
-So that the project can be executed locally:
-
-- the respective .env file must be stored in the backend folder
-- the respective .env file must be stored in the ai-logic-et folder
-- the respective auth_config.json must be stored in the frontend-et folder.
-
-To start the Docker image, run the following command in the root directory of the project:
-```bash
-docker-compose up -d
-```
+The project is not executable. The other parts of the project are not available. Only the backend part I created is in this repo
